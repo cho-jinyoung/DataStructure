@@ -3,7 +3,7 @@
 #include <malloc.h> 
 #include <string.h> 
 
-typedef struct _Node { 
+typedef struct Node { 
 	unsigned char student_id[20]; 
 	unsigned char department_id; 
 	unsigned char department_name[40]; 
@@ -11,8 +11,8 @@ typedef struct _Node {
 	unsigned char name[80]; 
 	unsigned char birthday[20]; 
 	
-	struct _Node *next;
-	struct _Node *prev;
+	struct Node *next;
+	struct Node *prev;
 } Node;
 
 

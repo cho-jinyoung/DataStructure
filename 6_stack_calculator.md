@@ -38,14 +38,13 @@ if top == (MAX_STACK_SIZE - 1)
 * 동적 메모리를 할당하여 스택의 크기를 동적으로 늘릴 수 있기 때문에 크기제한 없이 사용할 수 있지만,
 동적 메모리 할당/해제 처리를 위해 연산 처리시간이 늘어날 수 있음 
 ```
-//스택을 통해 처리하고자 하는 데이터타입(StackNode)와 스택 자체에 대한 데이터 타입(LinkedStack) 정의 필요
 typedef int element;
 
 typedef struct StackNode {
   element item;
   struct StackNode *link;
-} StackNode;
+} StackNode; //스택을 통해 처리하고자 하는 데이터타입
 typedef struct {
   StackNode *top;
-} LinkedStack;
+} LinkedStack; //스택 자체에 대한 데이터 타입
 ```

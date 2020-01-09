@@ -1,12 +1,12 @@
 # 스택
 * Stack: 가장 나중에 입력된 자료가 가장 나중에 출력되는 선입후출(LIFO:Last Input First Output) 형태의 자료구조
-** Push: 스택에 데이터를 입력하는 연산
-** Pop: 스택의 데이터를 출력하는 연산
-** SP(stack pointer): 스택에 가장 최근에 입력된 데이터를 가리키는 포인터
+  * Push: 스택에 데이터를 입력하는 연산
+  * Pop: 스택의 데이터를 출력하는 연산
+  * SP(stack pointer): 스택에 가장 최근에 입력된 데이터를 가리키는 포인터
 * 스택의 추상 자료구조
-** sp: 스택 포인터(top)
-** stack(): 원소가 없는 새로운 스택 생성
-** push(S, item): 새로운 원소 item을 스택에 추가
+  * sp: 스택 포인터(top)
+  * stack(): 원소가 없는 새로운 스택 생성
+  * push(S, item): 새로운 원소 item을 스택에 추가
 ```
 if isFull(S)
   then error "stack overflow"

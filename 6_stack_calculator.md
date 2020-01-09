@@ -44,6 +44,7 @@ typedef struct StackNode {
   element item;
   struct StackNode *link;
 } StackNode; //스택을 통해 처리하고자 하는 데이터타입
+
 typedef struct {
   StackNode *top;
 } LinkedStack; //스택 자체에 대한 데이터 타입

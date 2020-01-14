@@ -34,6 +34,7 @@ if top == (MAX_STACK_SIZE - 1)
   then return FALSE
 ```
 ```c
+//배열 기반 스택
 #include <stdio.h>
 #include <stdlib.h>
 

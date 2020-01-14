@@ -38,10 +38,12 @@ if top == (MAX_STACK_SIZE - 1)
 * 동적 메모리를 할당하여 스택의 크기를 동적으로 늘릴 수 있기 때문에 크기제한 없이 사용할 수 있지만,
 동적 메모리 할당/해제 처리를 위해 연산 처리시간이 늘어날 수 있음 
 ```
-typedef int element;
-
 typedef struct StackNode {
-  element item;
+  union item{
+    int operand;
+    char operator;
+  }item;
+  
   struct StackNode *link;
 } StackNode; //스택을 통해 처리하고자 하는 데이터타입
 
@@ -49,3 +51,7 @@ typedef struct {
   StackNode *top;
 } LinkedStack; //스택 자체에 대한 데이터 타입
 ```
+* union:공용체, 여러 멤버를 공유하는 하나의 값
+** 공용체 멤버에 접근시 .사용
+** malloc함수를 사용하여 공용체 포인터에 메모리 할당 후 멤버에 접근시 -> 사용
+** struct는 각 멤버들의 메모리 시작 주소가 다르지만 union은 시작주소가 모두 동일
